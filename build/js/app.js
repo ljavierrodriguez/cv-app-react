@@ -20176,7 +20176,7 @@ var Index = require('./components/Index.react');
 
 ReactDOM.render(React.createElement(Index, null), document.getElementById('app'));
 
-},{"./components/Index.react":28,"react":24,"react-dom":20}],27:[function(require,module,exports){
+},{"./components/Index.react":29,"react":24,"react-dom":20}],27:[function(require,module,exports){
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20189,6 +20189,97 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = require('react');
 
+var About = function (_React$Component) {
+  _inherits(About, _React$Component);
+
+  function About() {
+    _classCallCheck(this, About);
+
+    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+  }
+
+  _createClass(About, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "section",
+        { className: "resume-section p-3 p-lg-5 d-flex d-column", id: "about" },
+        React.createElement(
+          "div",
+          { className: "my-auto" },
+          React.createElement(
+            "h1",
+            { className: "mb-0" },
+            "Clarence",
+            React.createElement(
+              "span",
+              { className: "text-primary" },
+              "Taylor"
+            )
+          ),
+          React.createElement(
+            "div",
+            { className: "subheading mb-5" },
+            "3542 Berry Street \xB7 Cheyenne Wells, CO 80810 \xB7 (317) 585-8468 \xB7",
+            React.createElement(
+              "a",
+              { href: "mailto:name@email.com" },
+              "name@email.com"
+            )
+          ),
+          React.createElement(
+            "p",
+            { className: "lead mb-5" },
+            "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+          ),
+          React.createElement(
+            "div",
+            { className: "social-icons" },
+            React.createElement(
+              "a",
+              { href: "#" },
+              React.createElement("i", { className: "fab fa-linkedin-in" })
+            ),
+            React.createElement(
+              "a",
+              { href: "#" },
+              React.createElement("i", { className: "fab fa-github" })
+            ),
+            React.createElement(
+              "a",
+              { href: "#" },
+              React.createElement("i", { className: "fab fa-twitter" })
+            ),
+            React.createElement(
+              "a",
+              { href: "#" },
+              React.createElement("i", { className: "fab fa-facebook-f" })
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return About;
+}(React.Component);
+
+module.exports = About;
+
+},{"react":24}],28:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = require('react');
+var About = require('./About.react');
+
 var Content = function (_React$Component) {
   _inherits(Content, _React$Component);
 
@@ -20199,519 +20290,463 @@ var Content = function (_React$Component) {
   }
 
   _createClass(Content, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return React.createElement(
-        "div",
-        { className: "container-fluid p-0" },
+        'div',
+        { className: 'container-fluid p-0' },
+        React.createElement(About, null),
+        React.createElement('hr', { className: 'm-0' }),
         React.createElement(
-          "section",
-          { className: "resume-section p-3 p-lg-5 d-flex d-column", id: "about" },
+          'section',
+          { className: 'resume-section p-3 p-lg-5 d-flex flex-column', id: 'experience' },
           React.createElement(
-            "div",
-            { className: "my-auto" },
+            'div',
+            { className: 'my-auto' },
             React.createElement(
-              "h1",
-              { className: "mb-0" },
-              "Clarence",
-              React.createElement(
-                "span",
-                { className: "text-primary" },
-                "Taylor"
-              )
+              'h2',
+              { className: 'mb-5' },
+              'Experience'
             ),
             React.createElement(
-              "div",
-              { className: "subheading mb-5" },
-              "3542 Berry Street \xB7 Cheyenne Wells, CO 80810 \xB7 (317) 585-8468 \xB7",
+              'div',
+              { className: 'resume-item d-flex flex-column flex-md-row mb-5' },
               React.createElement(
-                "a",
-                { href: "mailto:name@email.com" },
-                "name@email.com"
-              )
-            ),
-            React.createElement(
-              "p",
-              { className: "lead mb-5" },
-              "I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
-            ),
-            React.createElement(
-              "div",
-              { className: "social-icons" },
-              React.createElement(
-                "a",
-                { href: "#" },
-                React.createElement("i", { className: "fab fa-linkedin-in" })
-              ),
-              React.createElement(
-                "a",
-                { href: "#" },
-                React.createElement("i", { className: "fab fa-github" })
-              ),
-              React.createElement(
-                "a",
-                { href: "#" },
-                React.createElement("i", { className: "fab fa-twitter" })
-              ),
-              React.createElement(
-                "a",
-                { href: "#" },
-                React.createElement("i", { className: "fab fa-facebook-f" })
-              )
-            )
-          )
-        ),
-        React.createElement("hr", { className: "m-0" }),
-        React.createElement(
-          "section",
-          { className: "resume-section p-3 p-lg-5 d-flex flex-column", id: "experience" },
-          React.createElement(
-            "div",
-            { className: "my-auto" },
-            React.createElement(
-              "h2",
-              { className: "mb-5" },
-              "Experience"
-            ),
-            React.createElement(
-              "div",
-              { className: "resume-item d-flex flex-column flex-md-row mb-5" },
-              React.createElement(
-                "div",
-                { className: "resume-content mr-auto" },
+                'div',
+                { className: 'resume-content mr-auto' },
                 React.createElement(
-                  "h3",
-                  { className: "mb-0" },
-                  "Senior Web Developer"
+                  'h3',
+                  { className: 'mb-0' },
+                  'Senior Web Developer'
                 ),
                 React.createElement(
-                  "div",
-                  { className: "subheading mb-3" },
-                  "Intelitec Solutions"
+                  'div',
+                  { className: 'subheading mb-3' },
+                  'Intelitec Solutions'
                 ),
                 React.createElement(
-                  "p",
+                  'p',
                   null,
-                  "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring."
+                  'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
                 )
               ),
               React.createElement(
-                "div",
-                { className: "resume-date text-md-right" },
+                'div',
+                { className: 'resume-date text-md-right' },
                 React.createElement(
-                  "span",
-                  { className: "text-primary" },
-                  "March 2013 - Present"
+                  'span',
+                  { className: 'text-primary' },
+                  'March 2013 - Present'
                 )
               )
             ),
             React.createElement(
-              "div",
-              { className: "resume-item d-flex flex-column flex-md-row mb-5" },
+              'div',
+              { className: 'resume-item d-flex flex-column flex-md-row mb-5' },
               React.createElement(
-                "div",
-                { className: "resume-content mr-auto" },
+                'div',
+                { className: 'resume-content mr-auto' },
                 React.createElement(
-                  "h3",
-                  { className: "mb-0" },
-                  "Web Developer"
+                  'h3',
+                  { className: 'mb-0' },
+                  'Web Developer'
                 ),
                 React.createElement(
-                  "div",
-                  { className: "subheading mb-3" },
-                  "Intelitec Solutions"
+                  'div',
+                  { className: 'subheading mb-3' },
+                  'Intelitec Solutions'
                 ),
                 React.createElement(
-                  "p",
+                  'p',
                   null,
-                  "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line."
+                  'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.'
                 )
               ),
               React.createElement(
-                "div",
-                { className: "resume-date text-md-right" },
+                'div',
+                { className: 'resume-date text-md-right' },
                 React.createElement(
-                  "span",
-                  { className: "text-primary" },
-                  "December 2011 - March 2013"
+                  'span',
+                  { className: 'text-primary' },
+                  'December 2011 - March 2013'
                 )
               )
             ),
             React.createElement(
-              "div",
-              { className: "resume-item d-flex flex-column flex-md-row mb-5" },
+              'div',
+              { className: 'resume-item d-flex flex-column flex-md-row mb-5' },
               React.createElement(
-                "div",
-                { className: "resume-content mr-auto" },
+                'div',
+                { className: 'resume-content mr-auto' },
                 React.createElement(
-                  "h3",
-                  { className: "mb-0" },
-                  "Junior Web Designer"
+                  'h3',
+                  { className: 'mb-0' },
+                  'Junior Web Designer'
                 ),
                 React.createElement(
-                  "div",
-                  { className: "subheading mb-3" },
-                  "Shout! Media Productions"
+                  'div',
+                  { className: 'subheading mb-3' },
+                  'Shout! Media Productions'
                 ),
                 React.createElement(
-                  "p",
+                  'p',
                   null,
-                  "Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration."
+                  'Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.'
                 )
               ),
               React.createElement(
-                "div",
-                { className: "resume-date text-md-right" },
+                'div',
+                { className: 'resume-date text-md-right' },
                 React.createElement(
-                  "span",
-                  { className: "text-primary" },
-                  "July 2010 - December 2011"
+                  'span',
+                  { className: 'text-primary' },
+                  'July 2010 - December 2011'
                 )
               )
             ),
             React.createElement(
-              "div",
-              { className: "resume-item d-flex flex-column flex-md-row" },
+              'div',
+              { className: 'resume-item d-flex flex-column flex-md-row' },
               React.createElement(
-                "div",
-                { className: "resume-content mr-auto" },
+                'div',
+                { className: 'resume-content mr-auto' },
                 React.createElement(
-                  "h3",
-                  { className: "mb-0" },
-                  "Web Design Intern"
+                  'h3',
+                  { className: 'mb-0' },
+                  'Web Design Intern'
                 ),
                 React.createElement(
-                  "div",
-                  { className: "subheading mb-3" },
-                  "Shout! Media Productions"
+                  'div',
+                  { className: 'subheading mb-3' },
+                  'Shout! Media Productions'
                 ),
                 React.createElement(
-                  "p",
+                  'p',
                   null,
-                  "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI."
+                  'Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.'
                 )
               ),
               React.createElement(
-                "div",
-                { className: "resume-date text-md-right" },
+                'div',
+                { className: 'resume-date text-md-right' },
                 React.createElement(
-                  "span",
-                  { className: "text-primary" },
-                  "September 2008 - June 2010"
+                  'span',
+                  { className: 'text-primary' },
+                  'September 2008 - June 2010'
                 )
               )
             )
           )
         ),
-        React.createElement("hr", { className: "m-0" }),
+        React.createElement('hr', { className: 'm-0' }),
         React.createElement(
-          "section",
-          { className: "resume-section p-3 p-lg-5 d-flex flex-column", id: "education" },
+          'section',
+          { className: 'resume-section p-3 p-lg-5 d-flex flex-column', id: 'education' },
           React.createElement(
-            "div",
-            { className: "my-auto" },
+            'div',
+            { className: 'my-auto' },
             React.createElement(
-              "h2",
-              { className: "mb-5" },
-              "Education"
+              'h2',
+              { className: 'mb-5' },
+              'Education'
             ),
             React.createElement(
-              "div",
-              { className: "resume-item d-flex flex-column flex-md-row mb-5" },
+              'div',
+              { className: 'resume-item d-flex flex-column flex-md-row mb-5' },
               React.createElement(
-                "div",
-                { className: "resume-content mr-auto" },
+                'div',
+                { className: 'resume-content mr-auto' },
                 React.createElement(
-                  "h3",
-                  { className: "mb-0" },
-                  "University of Colorado Boulder"
+                  'h3',
+                  { className: 'mb-0' },
+                  'University of Colorado Boulder'
                 ),
                 React.createElement(
-                  "div",
-                  { className: "subheading mb-3" },
-                  "Bachelor of Science"
+                  'div',
+                  { className: 'subheading mb-3' },
+                  'Bachelor of Science'
                 ),
                 React.createElement(
-                  "div",
+                  'div',
                   null,
-                  "Computer Science - Web Development Track"
+                  'Computer Science - Web Development Track'
                 ),
                 React.createElement(
-                  "p",
+                  'p',
                   null,
-                  "GPA: 3.23"
+                  'GPA: 3.23'
                 )
               ),
               React.createElement(
-                "div",
-                { className: "resume-date text-md-right" },
+                'div',
+                { className: 'resume-date text-md-right' },
                 React.createElement(
-                  "span",
-                  { className: "text-primary" },
-                  "August 2006 - May 2010"
+                  'span',
+                  { className: 'text-primary' },
+                  'August 2006 - May 2010'
                 )
               )
             ),
             React.createElement(
-              "div",
-              { className: "resume-item d-flex flex-column flex-md-row" },
+              'div',
+              { className: 'resume-item d-flex flex-column flex-md-row' },
               React.createElement(
-                "div",
-                { className: "resume-content mr-auto" },
+                'div',
+                { className: 'resume-content mr-auto' },
                 React.createElement(
-                  "h3",
-                  { className: "mb-0" },
-                  "James Buchanan High School"
+                  'h3',
+                  { className: 'mb-0' },
+                  'James Buchanan High School'
                 ),
                 React.createElement(
-                  "div",
-                  { className: "subheading mb-3" },
-                  "Technology Magnet Program"
+                  'div',
+                  { className: 'subheading mb-3' },
+                  'Technology Magnet Program'
                 ),
                 React.createElement(
-                  "p",
+                  'p',
                   null,
-                  "GPA: 3.56"
+                  'GPA: 3.56'
                 )
               ),
               React.createElement(
-                "div",
-                { className: "resume-date text-md-right" },
+                'div',
+                { className: 'resume-date text-md-right' },
                 React.createElement(
-                  "span",
-                  { className: "text-primary" },
-                  "August 2002 - May 2006"
+                  'span',
+                  { className: 'text-primary' },
+                  'August 2002 - May 2006'
                 )
               )
             )
           )
         ),
-        React.createElement("hr", { className: "m-0" }),
+        React.createElement('hr', { className: 'm-0' }),
         React.createElement(
-          "section",
-          { className: "resume-section p-3 p-lg-5 d-flex flex-column", id: "skills" },
+          'section',
+          { className: 'resume-section p-3 p-lg-5 d-flex flex-column', id: 'skills' },
           React.createElement(
-            "div",
-            { className: "my-auto" },
+            'div',
+            { className: 'my-auto' },
             React.createElement(
-              "h2",
-              { className: "mb-5" },
-              "Skills"
+              'h2',
+              { className: 'mb-5' },
+              'Skills'
             ),
             React.createElement(
-              "div",
-              { className: "subheading mb-3" },
-              "Programming Languages & Tools"
+              'div',
+              { className: 'subheading mb-3' },
+              'Programming Languages & Tools'
             ),
             React.createElement(
-              "ul",
-              { className: "list-inline dev-icons" },
+              'ul',
+              { className: 'list-inline dev-icons' },
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-html5" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-html5' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-css3-alt" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-css3-alt' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-js-square" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-js-square' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-angular" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-angular' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-react" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-react' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-node-js" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-node-js' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-sass" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-sass' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-less" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-less' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-wordpress" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-wordpress' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-gulp" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-gulp' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-grunt" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-grunt' })
               ),
               React.createElement(
-                "li",
-                { className: "list-inline-item" },
-                React.createElement("i", { className: "fab fa-npm" })
+                'li',
+                { className: 'list-inline-item' },
+                React.createElement('i', { className: 'fab fa-npm' })
               )
             ),
             React.createElement(
-              "div",
-              { className: "subheading mb-3" },
-              "Workflow"
+              'div',
+              { className: 'subheading mb-3' },
+              'Workflow'
             ),
             React.createElement(
-              "ul",
-              { className: "fa-ul mb-0" },
+              'ul',
+              { className: 'fa-ul mb-0' },
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-check" }),
-                "Mobile-First, Responsive Design"
+                React.createElement('i', { className: 'fa-li fa fa-check' }),
+                'Mobile-First, Responsive Design'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-check" }),
-                "Cross Browser Testing & Debugging"
+                React.createElement('i', { className: 'fa-li fa fa-check' }),
+                'Cross Browser Testing & Debugging'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-check" }),
-                "Cross Functional Teams"
+                React.createElement('i', { className: 'fa-li fa fa-check' }),
+                'Cross Functional Teams'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-check" }),
-                "Agile Development & Scrum"
+                React.createElement('i', { className: 'fa-li fa fa-check' }),
+                'Agile Development & Scrum'
               )
             )
           )
         ),
-        React.createElement("hr", { className: "m-0" }),
+        React.createElement('hr', { className: 'm-0' }),
         React.createElement(
-          "section",
-          { className: "resume-section p-3 p-lg-5 d-flex flex-column", id: "interests" },
+          'section',
+          { className: 'resume-section p-3 p-lg-5 d-flex flex-column', id: 'interests' },
           React.createElement(
-            "div",
-            { className: "my-auto" },
+            'div',
+            { className: 'my-auto' },
             React.createElement(
-              "h2",
-              { className: "mb-5" },
-              "Interests"
+              'h2',
+              { className: 'mb-5' },
+              'Interests'
             ),
             React.createElement(
-              "p",
+              'p',
               null,
-              "Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking."
+              'Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.'
             ),
             React.createElement(
-              "p",
-              { className: "mb-0" },
-              "When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world."
+              'p',
+              { className: 'mb-0' },
+              'When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.'
             )
           )
         ),
-        React.createElement("hr", { className: "m-0" }),
+        React.createElement('hr', { className: 'm-0' }),
         React.createElement(
-          "section",
-          { className: "resume-section p-3 p-lg-5 d-flex flex-column", id: "awards" },
+          'section',
+          { className: 'resume-section p-3 p-lg-5 d-flex flex-column', id: 'awards' },
           React.createElement(
-            "div",
-            { className: "my-auto" },
+            'div',
+            { className: 'my-auto' },
             React.createElement(
-              "h2",
-              { className: "mb-5" },
-              "Awards & Certifications"
+              'h2',
+              { className: 'mb-5' },
+              'Awards & Certifications'
             ),
             React.createElement(
-              "ul",
-              { className: "fa-ul mb-0" },
+              'ul',
+              { className: 'fa-ul mb-0' },
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-trophy text-warning" }),
-                "Google Analytics Certified Developer"
+                React.createElement('i', { className: 'fa-li fa fa-trophy text-warning' }),
+                'Google Analytics Certified Developer'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-trophy text-warning" }),
-                "Mobile Web Specialist - Google Certification"
+                React.createElement('i', { className: 'fa-li fa fa-trophy text-warning' }),
+                'Mobile Web Specialist - Google Certification'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-trophy text-warning" }),
-                "1",
+                React.createElement('i', { className: 'fa-li fa fa-trophy text-warning' }),
+                '1',
                 React.createElement(
-                  "sup",
+                  'sup',
                   null,
-                  "st"
+                  'st'
                 ),
-                "Place - University of Colorado Boulder - Emerging Tech Competition 2009"
+                'Place - University of Colorado Boulder - Emerging Tech Competition 2009'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-trophy text-warning" }),
-                "1",
+                React.createElement('i', { className: 'fa-li fa fa-trophy text-warning' }),
+                '1',
                 React.createElement(
-                  "sup",
+                  'sup',
                   null,
-                  "st"
+                  'st'
                 ),
-                "Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)"
+                'Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-trophy text-warning" }),
-                "2",
+                React.createElement('i', { className: 'fa-li fa fa-trophy text-warning' }),
+                '2',
                 React.createElement(
-                  "sup",
+                  'sup',
                   null,
-                  "nd"
+                  'nd'
                 ),
-                "Place - University of Colorado Boulder - Emerging Tech Competition 2008"
+                'Place - University of Colorado Boulder - Emerging Tech Competition 2008'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-trophy text-warning" }),
-                "1",
+                React.createElement('i', { className: 'fa-li fa fa-trophy text-warning' }),
+                '1',
                 React.createElement(
-                  "sup",
+                  'sup',
                   null,
-                  "st"
+                  'st'
                 ),
-                "Place - James Buchanan High School - Hackathon 2006"
+                'Place - James Buchanan High School - Hackathon 2006'
               ),
               React.createElement(
-                "li",
+                'li',
                 null,
-                React.createElement("i", { className: "fa-li fa fa-trophy text-warning" }),
-                "3",
+                React.createElement('i', { className: 'fa-li fa fa-trophy text-warning' }),
+                '3',
                 React.createElement(
-                  "sup",
+                  'sup',
                   null,
-                  "rd"
+                  'rd'
                 ),
-                "Place - James Buchanan High School - Hackathon 2005"
+                'Place - James Buchanan High School - Hackathon 2005'
               )
             )
           )
@@ -20725,7 +20760,7 @@ var Content = function (_React$Component) {
 
 module.exports = Content;
 
-},{"react":24}],28:[function(require,module,exports){
+},{"./About.react":27,"react":24}],29:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20762,7 +20797,7 @@ var Index = function (_React$Component) {
 
 module.exports = Index;
 
-},{"./Content.react":27,"./Menu.react":29,"react":24,"react-dom":20}],29:[function(require,module,exports){
+},{"./Content.react":28,"./Menu.react":30,"react":24,"react-dom":20}],30:[function(require,module,exports){
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
